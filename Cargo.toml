@@ -5,7 +5,3 @@ edition = "2021"
 
 [dependencies]
 thiserror = "1.0"
-
-[lib]
-name = "smallqueue"
-path = "smallqueue.rs"
