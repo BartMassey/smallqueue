@@ -65,7 +65,7 @@ impl<const C: usize, T> Queue<C, T> {
         // Safety: We are only writing to a location at an index that
         // is bounds-checked.
         unsafe {
-            *self.values[(self.start + self.len) % cap].as_mut_ptr() = value;
+            self.values[(self.start + self.len) % cap].as_mut_ptr().write(value);
         }
         self.len += 1;
         Ok(())
