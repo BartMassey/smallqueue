@@ -2,7 +2,7 @@
 An implementation of a simple queue (first-in first-out)
 data structure that uses no heap storage. As such, this
 queue can be used in `no_std` programs, and may be more
-efficient that [std::collections::VecDeque] in some
+efficient than [std::collections::VecDeque] in some
 situations.
 
 The queue capacity is specified at compile time using a
