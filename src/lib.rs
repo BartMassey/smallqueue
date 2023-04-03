@@ -2,7 +2,7 @@
 An implementation of a simple queue (first-in first-out)
 data structure that uses no heap storage. As such, this
 queue can be used in `no_std` programs, and may be more
-efficient than [std::collections::VecDeque] in some
+efficient than [std::collections::VecDeque](https://doc.rust-lang.org/stable/alloc/collections/vec_deque/struct.VecDeque.html) in some
 situations.
 
 The queue capacity is specified at compile time using a
